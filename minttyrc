@@ -1,0 +1,5 @@
+Font=Ubuntu Mono
+FontHeight=10
+ThemeFile=flat-ui
+Columns=100
+Rows=30
