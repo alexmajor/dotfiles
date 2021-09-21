@@ -25,7 +25,7 @@ You can make local customizations for some programs by editing these file(s):
 
 ## Inspiration From
 - [Anish Athalye][anishathalye] , for tool and guide
-- [Keanu Reeves][[reeves]], for being breathtaking
+- [Keanu Reeves][reeves], for being breathtaking
 
 ## License
 This is free and unencumbered software released into the public domain. See [LICENSE][license] for details.
