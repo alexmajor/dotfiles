@@ -11,6 +11,7 @@
     ec = !git config --global -e
     ignore = "!gig() { curl -L -s https://www.gitignore.io/api/$@cake,visualstudio,visualstudiocode,windows ;}; gig >> .gitignore"
     up-ignore=!git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
+    phu = !git push -u origin
     rba = !git rebase --abort
     rbc = "!f(){ git add -A && git rebase --continue; }; f"
     rbi = "!f(){ git fetch origin && git rebase --interactive origin/${1-master}; }; f"
@@ -41,15 +42,15 @@
 [init]
     defaultBranch = main
 [core]
-	editor = code --wait --new-window
+    editor = code --wait --new-window	
 [diff]
-	tool = vscode
+    tool = vscode
 [difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
-	tool = vscode
+    tool = vscode
 [mergetool "vscode"]
-	cmd = code --wait $MERGED
+    cmd = code --wait $MERGED
 
 # Allow local customizations in the .gitconfig_local file
 [include]
